@@ -1,4 +1,4 @@
-name: Node.js CI
+name: CI
 
 on:
   push:
@@ -10,9 +10,8 @@ permissions:
   packages: write
 
 jobs:
-  build:
+  template:
     uses: cacevedod/pipeline-templates/.github/workflows/nodejs-ci-template.yml@main
     with:
       run-checkov: true
       run-docker-build: true
-      run-docker-push: false
