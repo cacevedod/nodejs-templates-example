@@ -14,4 +14,4 @@ jobs:
     uses: cacevedod/pipeline-templates/.github/workflows/nodejs-ci-template.yml@main
     with:
       run-checkov: true
-      run-docker: true
+      run-docker-build: true
