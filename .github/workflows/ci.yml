@@ -10,4 +10,5 @@ jobs:
       working-directory: .
       node-version: 20
       docker-image-name: ghcr.io/${{ github.repository }}:${{ github.sha }}
-    secrets: inherit
+    secrets:
+      inherit: true
