@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/cacevedod/nodejs-templates-example/actions/workflows/ci.yml/badge.svg)](https://github.com/cacevedod/nodejs-templates-example/actions/workflows/ci.yml)
+
 # Ejemplo de Node.js con Fastify, TypeScript y GitHub Actions
 
 Este proyecto es un ejemplo de buenas prácticas para aplicaciones Node.js usando Fastify, TypeScript y pruebas unitarias con Jest. Incluye un workflow reusable para CI/CD en GitHub Actions.

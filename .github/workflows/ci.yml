@@ -1,14 +1,13 @@
 name: Node.js CI
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
   build:
     uses: cacevedod/pipeline-templates/.github/workflows/nodejs-ci-template.yml@main
     with:
-      working-directory: .
-      node-version: 20
-      docker-image-name: ghcr.io/${{ github.repository }}:${{ github.sha }}
-    secrets:
-      inherit: true
+      run-checkov: true
+      run-docker: true
